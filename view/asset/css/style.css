@@ -1,0 +1,66 @@
+button {
+	color : white;
+}
+
+.personnagesContainer b {
+	margin-left:10px;
+}
+
+.personnagesContainer p {
+	margin: 0;
+}
+
+.personnagesContainer .personnageDisplay {
+	margin-top:10px;
+	background-color: #007095;
+	color:white;
+	width:15%;
+	display: none;
+	position: relative;
+}
+
+.personnagesContainer .personnageDisplay .removePersonnage {
+	display: block;
+	position: absolute;
+	top:5px;
+	right:15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.boutonAdd {
+	color: #007095;
+    font-size: 50px;
+    line-height: 0;
+    margin-left: 10px;
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    cursor:pointer;
+}
+
+form#createPersonnage {
+	width:450px;
+	height:153px;
+	border:2px solid #007095;
+	box-shadow: 2px 2px 5px #333333;
+	padding-right: 15px;
+    padding-top: 5px;
+    display:none;
+}
+form#createPersonnage input.inputText {
+	width:100%;
+	margin:5px;
+}
+
+form#createPersonnage input.submit {
+	border:none;
+	box-shadow: none;
+	background-color: #007095;
+	color: white;
+	padding:5px;
+	margin-right:auto;
+	margin-left:auto;
+	width:50%;
+	display: block;
+}
