@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-  <head><?php include 'header.php' ?></head>
-  <body>
-	
+<?php 
+include 'header.php';
 
-	<button class="displayPersonnages" name="displayPersonnages">Personnages</button> 
-	<i class="fi-plus boutonAdd"></i>
-	<form action="#" id="createPersonnage">
-		<div class="row">
-			<div type="text" class="columns small-12 large-12"><input name="prenom" class="prenom inputText" placeholder="Prénom" /></div> 
-			<div type="text" class="columns small-12 large-12"><input name="nom" class="nom inputText" placeholder="Nom" /></div>
-			<div type="text" class="columns small-6 large-6"><input name="age" class="age inputText" placeholder="Âge" /></div>
-			<div type="text" class="columns small-6 large-6"><input name="fonction" class="fonction inputText" placeholder="Fonction" /></div>
-			<input type="submit" name="submit" class="submit" value="Créer un personnage" />
-		</div>
-	</form>
+	if($_GET['page'] == 'add-supp-user') {
+		include 'page/add-supp-user.php';
 
-	<div class="personnagesContainer"></div>
-	
+	}
+	else if ($_GET['page'] == 'room-display') {
+		include 'page/room-display.php';
+		
+	}
+	else {
+		include 'page/add-supp-user.php';
+	}
 
-
-
-    <div class="footer"><?php include 'footer.php' ?></div>
-  </body>
-</html>
-
-
-
+include 'footer.php';
+?>

@@ -47,6 +47,7 @@ form#createPersonnage {
 	padding-right: 15px;
     padding-top: 5px;
     display:none;
+    margin-top:8px;
 }
 form#createPersonnage input.inputText {
 	width:100%;
@@ -63,4 +64,35 @@ form#createPersonnage input.submit {
 	margin-left:auto;
 	width:50%;
 	display: block;
+}
+
+.buttonInteraction {
+	position: relative;	
+	width:300px;
+}
+
+form#loginForm{
+	position: absolute;
+	background-color: white;
+	border: 1px solid #008cba;
+	height:50px;
+	width: 375px;
+	top:37px;
+	right:102px;
+	display:none;
+}
+
+form#loginForm input.submit{
+	padding:5px;
+
+}
+
+li.messageBienvenue {
+	color:white;
+	display:none;
+	padding-top: 10px;
+}
+
+#disconnectButton {
+	display:none;
 }
