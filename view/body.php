@@ -1,16 +1,16 @@
 <?php 
 include 'header.php';
 
-	if($_GET['page'] == 'add-supp-user') {
-		include 'page/add-supp-user.php';
-
-	}
-	else if ($_GET['page'] == 'room-display') {
-		include 'page/room-display.php';
-		
-	}
-	else {
-		include 'page/add-supp-user.php';
+	switch($_GET['page']) {
+		case 'add-supp-user':
+			include 'page/add-supp-user.php';
+			break;
+		case 'room-display':
+			include 'page/room-display.php';
+			break;
+		default:
+			include 'page/add-supp-user.php';
+			break;
 	}
 
 include 'footer.php';

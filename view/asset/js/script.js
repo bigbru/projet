@@ -79,6 +79,7 @@ function creerPersonnage(conteneurPersonnages) {
 	});
 }
 
+// OBSERVER // Sert à se connecter
 function connexionJoueur(){
 	var boutonFormulaire = $('#loginButton');
 	var formulaireConnexion = $('#loginForm');
@@ -114,6 +115,7 @@ function connexionJoueur(){
 	});
 }
 
+// OBSERVER // Sert à se déconnecter
 function deconnexionJoueur(){
 	var bouton = $('#disconnectButton');
 	var allElementToToggle = $('#disconnectButton, li.messageBienvenue, #loginButton');
@@ -125,6 +127,7 @@ function deconnexionJoueur(){
 	});
 }
 
+// OBSERVER // Gestionnaire de connexion lors du chargement de la page
 function gestionCookieLogin() {
 	var displayElement = $('#disconnectButton, li.messageBienvenue');
 	var hideElement = $('#loginButton');
